@@ -16,6 +16,7 @@ function showData(pokemon, imagen) {
     name.textContent = pokemon
     const image = document.createElement("img")
     image.src = imagen
+    container.innerHTML = ''
     container.appendChild(image)
     container.appendChild(name)
 }
