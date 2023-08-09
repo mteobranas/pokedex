@@ -86,3 +86,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.card_image img {
+    height: 80%;
+}
