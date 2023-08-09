@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    font-size: 64px;
+}
+
+.red{ 
+    color:red;
+}
+
+#input_form {
+    width: 40vw;
+    heighT: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#user_input {
+    height: 40px;
+    width: 80%;
+    padding-left: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#btn {
+    width: 20%;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#container {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card_title {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.card_image {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_image img {
+    width: 100%;
+}

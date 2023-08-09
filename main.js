@@ -3,20 +3,23 @@ const container = document.getElementById("container")
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()
-    const userInput = document.getElementById("userInput").value
+    const userInput = document.getElementById("user_input").value
     fetch(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
         .then(res => res.json())
         .then(data => {
-            showData(data.name, data.sprites.front_default)
+            showCard(data.name, data.sprites.other.dream_world.front_default)
         })
 })
 
-function showData(pokemon, imagen) {
-    const name = document.createElement("p")
-    name.textContent = pokemon
-    const image = document.createElement("img")
-    image.src = imagen
-    container.innerHTML = ''
-    container.appendChild(image)
-    container.appendChild(name)
+function showCard(pokemon, imagen) {
+    container.innerHTML = '';
+    container.innerHTML = 
+    `<div class="card">
+            <div class="card_title">
+                <h2>${pokemon}</h2>
+            </div>
+            <div class="card_image">
+                <img src="${imagen}" alt="${pokemon}">
+            </div>
+        </div>`
 }
