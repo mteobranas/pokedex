@@ -3,11 +3,13 @@ const container = document.getElementById("container")
 
 btn.addEventListener("click", (e) => {
     e.preventDefault()
-    const userInput = document.getElementById("user_input").value
+
+    const input = document.getElementById("user_input").value
+    const userInput = input.toLowerCase()
     fetch(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
         .then(res => res.json())
         .then(data => {
-            showCard(data.name, data.sprites.other.dream_world.front_default)
+            showCard(data.name.toUpperCase(), data.sprites.other.dream_world.front_default)
         })
 })
 
