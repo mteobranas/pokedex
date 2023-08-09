@@ -12,7 +12,7 @@ btn.addEventListener("click", (e) => {
             showCard(data.name.toUpperCase(), data.sprites.other.dream_world.front_default)
         })
         .catch(err => {
-            alert("Invalid pokemon name")
+            container.innerHTML = "invalid pokemon name"
         })
 })
 
