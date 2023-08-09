@@ -77,7 +77,6 @@
     background-color: red;
     color: white;
     font-size: 24px;
-    z-index: 1;
 }
 
 .card_image {
@@ -89,5 +88,6 @@
 }
 
 .card_image img {
-    width: 100%;
+    width: auto;
+    height: 90%;
 }
